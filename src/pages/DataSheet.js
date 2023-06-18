@@ -41,7 +41,7 @@ const DataSheet = (props) => {
   return (
     <div  className="datasheet">
       <div className="page-datasheet-back-div">
-        <Link to="/lifesum-clone">
+        <Link to="/">
           <h2>⬅</h2>
         </Link>
       </div>
