@@ -69,7 +69,7 @@ const Food = (props) => {
     let abortController = new AbortController();
     let aborted = abortController.signal.aborted;
     async function fetchResults() {
-      let response = await fetch(`https://api.spoonacular.com/food/ingredients/${foodId}/information?apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}&amount=${amount}&unit=${unit}`);
+      let response = await fetch(`https://api.spoonacular.com/food/ingredients/${foodId}/information?apiKey=${"298395fc508d46c8accf3b43c528a9e2"}&amount=${amount}&unit=${unit}`);
       let myData = await response.json();
       aborted = abortController.signal.aborted;
       if (aborted === false){

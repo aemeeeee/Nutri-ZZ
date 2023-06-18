@@ -72,7 +72,7 @@ const Configure = (props) => {
 
 
       <BackArrowDiv>
-        <Link to="/lifesum-clone">
+        <Link to="/">
           <h2>⬅</h2>
         </Link>
       </BackArrowDiv>
