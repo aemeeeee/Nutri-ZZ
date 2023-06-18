@@ -1,6 +1,6 @@
-# Lifesum Clone
+# NutriZZ
 
-This app is a clone to the Lifesum app (https://lifesum.com/)
+
 
 ## Technologies
 
