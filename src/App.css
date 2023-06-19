@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap');
 
 :root {
-  --primary: rgb(147, 189, 147);
+  --primary: #FEDDD6;
   --primary-dark: rgb(131, 168, 131);
-  --primary-letter: white;
+  --primary-letter: black;
   --light-gray: rgb(235, 235, 235);
   --gray: rgb(216, 216, 216);
   --black: rgb(100, 100, 100);
   --light: rgb(245, 242, 234);
+  --btn-col: #F2B6AD;
 }
 
 
@@ -22,3 +23,8 @@
   text-decoration: none;
   color: inherit;
 }
+
+.button:hover { 
+  opacity: 1; 
+  background-color: #f1b6ac; 
+} 

@@ -10,9 +10,9 @@
   padding: 10px;
 }
 
-.page-signin h2{
+/*.page-signin h2{
   margin: 0;
-}
+}*/
 
 .signin{
   display: flex;
@@ -24,34 +24,50 @@
   margin: 40px auto;
 }
 
-.signin h1{
+/*.signin h1{
   font-size: 90px;
   margin: 10px 0;
-}
+}*/
 
 .signin input{
   max-width: 380px;
-  font-size: 50px;
+  font-size: 20px;
   padding: 10px;
   margin: 10px 0;
-  border-radius: 5%;
-  border: 1px solid var(--primary-letter);
+  border-radius: 5px;
+  border: none /*1px solid var(--primary-letter)*/;
 }
 
 .signin button{
-  font-size: 30px;
-  border: 1px solid var(--primary-letter);
-  background-color: var(--primary-letter);
+  font-size: 20px;
+  /*border: 1px solid var(--primary-letter);*/
+  background-color: var(--btn-col);
   padding: 5px 50px;
-  border-radius: 20%;
-  color: var(--primary);
+  color: var(--primary-letter);
   margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px
 }
+
+.btn:hover { 
+  opacity: 1; 
+  background-color: #f1b6ac; 
+} 
+
 .signin h4{
   margin: 15px 0 0 0;
+}
+
+.signin h1{
+  font-weight: bold;
 }
 
 #signin-btnOther{
   font-size: 20px;
   margin-top: 5px;
+}
+
+.redirect{
+  text-decoration: underline;
+  cursor: pointer;
 }

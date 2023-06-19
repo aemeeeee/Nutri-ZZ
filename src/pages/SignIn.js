@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import firebase from '../firebase';
+import { Alert, Button, Card, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import '../stylesheets/SignIn.css'
 
 const SignIn = (props) => {
@@ -40,23 +42,26 @@ const SignIn = (props) => {
   if (onSignUp === true) {
     return (
       <div className="page-signin">
-        <h2>Lifesum Clone</h2>
-        <h3>Please Don't Use Real Private Information</h3>
-        <div  className="signin">
+        <div className="signin card col-5 mx-auto ">
           <h1>Sign Up</h1>
-          <input type="text" placeholder="username" id="signUp-username" maxLength="12" autoComplete="off"/>
-          <input type="email" placeholder="fake email" id="signUp-email" maxLength="20" autoComplete="off"/>
-          <input type="password" placeholder="password" id="signUp-password" maxLength="15" autoComplete="off"/>
+          <input type="text" placeholder="Username" id="signUp-username" maxLength="12" autoComplete="off" fontSize/>
+          <input type="email" placeholder="Email" id="signUp-email" maxLength="20" autoComplete="off"/>
+          <input type="password" placeholder="Password" id="signUp-password" maxLength="15" autoComplete="off"/>
           <button onClick={signUp} >Submit</button>
-          <h4>Already a member?</h4>
-          <button onClick={() => {setOnSignUp(false)}} id="signin-btnOther">Log In</button>
+          <div className="w-100 text-center" style={{fontSize:16}}>
+            <span>Already a User? </span>
+            <span className="redirect" onClick={() => {setOnSignUp(false)}} style={{color: "#f1b6ac"}}>
+              Login
+            </span>
+          </div>
+          {/* <h4>Already a User?</h4> */}
+          {/* <button onClick={() => {setOnSignUp(false)}} id="signin-btnOther">Log In</button> */}
         </div>
       </div>
     );
   } else {
     return (
       <div  className="page-signin">
-        <h2>Lifesum Clone</h2>
         <div  className="signin">
           <h1>Log In</h1>
           <input type="email" placeholder="email" id="logIn-email" autoComplete="off"/>
