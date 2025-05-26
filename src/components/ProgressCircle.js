@@ -14,7 +14,6 @@ const ProgressCircle = (props) => {
 
   return (
     <div  className="progresscircle">
-      {/* <CircularProgress variant="determinate" value={props.progress} size={`${props.circleSize}px`} color="inherit" thickness={1.8} style={{borderRadius:"100%", boxShadow:'inset 0px 0px 0px ${props.thickness * 6}px rgba(0, 0, 0, 0.1)'}}/> */}
       <CircularProgress
       variant="determinate"
       value={props.progress}
